@@ -1,0 +1,37 @@
+{
+  "name": "monoRepoRemuFran",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "start": "node apps/backend/dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcornejov/monoRepoRemuFran.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pcornejov/monoRepoRemuFran/issues"
+  },
+  "homepage": "https://github.com/pcornejov/monoRepoRemuFran#readme",
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
+    "turbo": "^1.10.6"
+  },
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0"
+  }
+}
